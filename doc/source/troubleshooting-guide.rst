@@ -175,7 +175,7 @@ For Developers
 
 This section is intended to help with issues that developers may run into in the course of their development adventures in Magnum.
 
-*Note*: This description needs to be here, because empty blocks after a header, followed by another header, cause the GitHub ReStructuredText renderer to not properly increment the heading level.
+*Note*: This description needs to be here, because empty blocks after a header, followed by another header, because the GitHub ReStructuredText renderer to not properly increment the heading level.
 
 Troubleshooting in Gate
 -----------------------
