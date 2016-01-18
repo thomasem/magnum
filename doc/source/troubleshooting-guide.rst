@@ -286,4 +286,4 @@ Helpful nuances about the Devstack Gate
   * After you run a job, it's ideal to clean up and start over with a
     fresh VM to best simulate the Devstack Gate environment.
 
-.. README_: https://github.com/openstack-infra/devstack-gate/blob/master/README.rst#simulating-devstack-gate-tests P
+.. _README: https://github.com/openstack-infra/devstack-gate/blob/master/README.rst#simulating-devstack-gate-tests P
