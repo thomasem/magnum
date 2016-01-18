@@ -173,9 +173,8 @@ Heat software resource scripts
 For Developers
 ==============
 
-This section is intended to help with issues that developers may run into in the course of their development adventures in Magnum.
-
-*Note*: This description needs to be here, because empty blocks after a header, followed by another header, because the GitHub ReStructuredText renderer to not properly increment the heading level.
+This section is intended to help with issues that developers may
+run into in the course of their development adventures in Magnum.
 
 Troubleshooting in Gate
 -----------------------
@@ -277,7 +276,10 @@ Helpful nuances about the Devstack Gate
         a new file for the job you want, paste in what you want, then
         ``chmod u+x <filename>`` and run it.
 
-    * Parameters can be found `here <https://github.com/openstack-infra/project-config/blob/master/jenkins/jobs/projects.yaml#L2477-L2506>`_.
+    * Parameters can be found in `projects.yaml <https://github.com/openstack-infra/project-config/blob/master/jenkins/jobs/projects.yaml>`_.
+      This file changes a lot, so it's more reliable to say that you can
+      search for the magnum jobs where you'll see examples of what
+      gets passed in.
 
   * Three jobs are usually run as a part of Magnum gate, all of with are found in ``project-config``'s `macros.yml <https://github.com/openstack-infra/project-config/blob/master/jenkins/jobs/macros.yaml>`_:
 
