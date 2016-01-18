@@ -9,6 +9,8 @@ the users quickly identify the relevant information, the guide is
 organized as a list of failure symptoms: each has some suggestions
 with pointers to the details for troubleshooting.
 
+A separate section `for developers`_ describes useful techniques such as
+debugging unit tests and gate tests.
 
 ================
 Failure symptoms
@@ -167,12 +169,18 @@ Heat software resource scripts
 *To be filled in*
 
 
-=======================
-Troubleshooting in Gate
-=======================
+===============
+For Developers
+===============
 
-Simulating gate tests (adapted from Devstack Gate's `README <https://github.com/openstack-infra/devstack-gate/blob/master/README.rst#simulating-devstack-gate-tests>`_ which is worth a quick read to better understand the following)
-  #. Boot a VM like described in the `devstack-gate` README (linked above).
+Troubleshooting in Gate
+-----------------------
+
+Simulating gate tests
+  *Note*: This is adapted from Devstack Gate's `README`_ which
+  is worth a quick read to better understand the following)
+
+  #. Boot a VM like described in the Devstack Gate's `README`_ .
   #. Provision this VM like so::
 
       apt-get update \
@@ -258,9 +266,12 @@ Helpful nuances about the Devstack Gate
 
       * Anything with ``{}`` should be set as an environment variable
 
-      * Anything with ``{{ }}`` should have those brackets changed to single brackets - ``{}``.
+      * Anything with ``{{ }}`` should have those brackets changed to
+        single brackets - ``{}``.
 
-      * As with the documentation for Devstack Gate, you can just create a new file for the job you want, paste in what you want, then ``chmod u+x <filename>`` and run it.
+      * As with the documentation for Devstack Gate, you can just create
+        a new file for the job you want, paste in what you want, then
+        ``chmod u+x <filename>`` and run it.
 
     * Parameters can be found `here <https://github.com/openstack-infra/project-config/blob/master/jenkins/jobs/projects.yaml#L2477-L2506>`_.
 
@@ -272,4 +283,7 @@ Helpful nuances about the Devstack Gate
 
     * devstack-checkout
 
-  * After you run a job, it's ideal to clean up and start over with a fresh VM to best simulate the Devstack Gate environment.
+  * After you run a job, it's ideal to clean up and start over with a
+    fresh VM to best simulate the Devstack Gate environment.
+
+.. `README`_: https://github.com/openstack-infra/devstack-gate/blob/master/README.rst#simulating-devstack-gate-tests P
