@@ -169,12 +169,12 @@ Heat software resource scripts
 *To be filled in*
 
 
-===============
+==============
 For Developers
-===============
+==============
 
 Troubleshooting in Gate
------------------------
+------------------------
 
 Simulating gate tests
   *Note*: This is adapted from Devstack Gate's `README`_ which
